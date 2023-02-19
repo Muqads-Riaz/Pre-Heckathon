@@ -8,14 +8,11 @@ export default function Main({navigation}) {
   }
   return (
     <View>
-    <View style={{ height: '65%',borderBottomRightRadius: 50,borderBottomLeftRadius: 50, backgroundColor:"darkgreen" , display:"flex" ,alignItems: 'center', justifyContent: 'center' }}>
-        <Image source={require("../Images/logo.png")} style={{width: 180 , height: 150  }}/>
-        <Text style={{color: 'white' , fontSize: 70 }}>Plantify</Text>
-  </View>
-  <Text style={{color: 'green' , fontSize: 30 , marginLeft : 20 , marginTop:10 }}>Get Ready</Text>
-  <Text style={{color: 'green' , fontSize: 30,marginLeft : 20  }}>Be Higyenic</Text>
-  <Text style={{color: 'green' , fontSize: 15,marginHorizontal : 20 , marginTop:15 }}>When you plant something , you invest in a beautiful future amidst a stressfull</Text>
-  <TouchableOpacity style={{margin: 20 , display:"flex" ,alignItems: 'center', justifyContent: 'center' , backgroundColor:"green" , borderRadius: 15}} onPress={()=>movetoScreen('Login')} ><Text style={styles.button}>Get Started</Text></TouchableOpacity>
+     <Image source={{uri:'https://w7.pngwing.com/pngs/429/539/png-transparent-emergency-alert-system-emergency-management-emergency-broadcast-system-disaster-emergency-s-ambulance-emergency-vehicle-911.png'}} style={{width: 400, height: 550 }}/>
+  <Text style={{color: 'grey' , fontSize: 28 , marginLeft : 20 , marginTop:10 }}>Safe and</Text>
+  <Text style={{color: 'grey' , fontSize: 28,marginLeft : 20  }}>Quick Pakistan</Text>
+  <Text style={{color: 'grey' , fontSize: 15,marginHorizontal : 20 , marginTop:15 }}>Our Services offer you secure and safe life</Text>
+  <TouchableOpacity style={{margin: 20 , display:"flex" ,alignItems: 'center', justifyContent: 'center' , backgroundColor:"red" , borderRadius: 15}} onPress={()=>movetoScreen('Login')} ><Text style={styles.button}>Get Started</Text></TouchableOpacity>
   </View>
   )
 }
